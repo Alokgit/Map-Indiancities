@@ -25,3 +25,13 @@ print(list_of_rows)
 import pandas as pd  
 df = pd.DataFrame(list_of_rows, columns=['city name', 'population count', 'latitude', 'longitude'])   
 df.to_csv('city_data.csv', index=False, encoding='utf-8')
+
+
+# code to generate data in proper format for cityMap
+# newlist = []
+# for (a,b,c,d) in list_of_rows:
+#     x = float(c)
+#     y = float(d)
+#     z = a + ": " + b
+#     newlist.append([x,y,z] )
+# print(newlist)
