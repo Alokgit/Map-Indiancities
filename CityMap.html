@@ -1,0 +1,41 @@
+<html>
+
+<head>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script>
+    google.charts.load('current', { 'packages': ['map'], "mapsApiKey": "AIzaSyBIiFqYuLCzKys1e6dZX68qClJKrUSR6xI" });
+    google.charts.setOnLoadCallback(drawMap);
+
+    function drawMap() {
+      var data = google.visualization.arrayToDataTable([
+      ['Lat', 'Long', 'cityName: Population'],
+      [19.07283, 72.88261, 'Mumbai: 12,691,836'], [28.65195, 77.23149, 'Delhi: 10,927,986'], [12.97194, 77.59369, 'Bengaluru: 5,104,047'], [22.56263, 88.36304, 'Kolkata: 4,631,392'], [13.08784, 80.27847, 'Chennai: 4,328,063'], [23.02579, 72.58727, 'Ahmedabad: 3,719,710'], [17.38405, 78.45636, 'Hyderabad: 3,597,816'], [18.51957, 73.85535, 'Pune: 2,935,744'], [21.19594, 72.83023, 'Surat: 2,894,504'], [26.46523, 80.34975, 'Kanpur: 2,823,249'], [26.91962, 75.78781, 'Jaipur: 2,711,758'], [19.03681, 73.01582, 'Navi Mumbai: 2,600,000'], [26.83928, 80.92313, 'Lucknow: 2,472,011'], [21.14631, 79.08491, 'Nagpur: 2,228,018'], [22.71792, 75.8333, 'Indore: 1,837,041'], [25.59408, 85.13563, 'Patna: 1,599,920'], [23.25469, 77.40289, 'Bhopal: 1,599,914'], [30.91204, 75.85379, 'Ludhiana: 1,545,368'], [8.72742, 77.6838, 'Tirunelveli: 1,435,844'], [27.18333, 78.01667, 'Agra: 1,430,055'], [22.29941, 73.20812, 'Vadodara: 1,409,476'], [29.44768, 75.67206, 'Gorakhpur: 1,324,570'], [19.99727, 73.79096, 'Nashik: 1,289,497'], [18.62292, 73.80696, 'Pimpri: 1,284,606'], [19.2437, 73.13554, 'Kalyan: 1,262,255'], [19.19704, 72.96355, 'Thane: 1,261,517'], [28.98002, 77.70636, 'Meerut: 1,223,184'], [19.23114, 82.54826, 'Nowrangapur: 1,220,946'], [28.41124, 77.31316, 'Faridabad: 1,220,229'], [28.66535, 77.43915, 'Ghaziabad: 1,199,191'], [19.21667, 73.08333, 'Dombivli: 1,193,000'], [22.29161, 70.79322, 'Rajkot: 1,177,362'], [25.31668, 83.01041, 'Varanasi: 1,164,404'], [31.62234, 74.87534, 'Amritsar: 1,092,450'], [25.44478, 81.84322, 'Allahabad: 1,073,438'], [17.68009, 83.20161, 'Visakhapatnam: 1,063,178'], [10.01115, 77.47772, 'Teni: 1,034,724'], [23.16697, 79.95006, 'Jabalpur: 1,030,168'], [22.57688, 88.31857, 'Haora: 1,027,672'], [19.87757, 75.34226, 'Aurangabad: 1,016,441'], [18.53017, 73.85263, 'Shivaji Nagar: 1,000,000'], [17.67152, 75.91044, 'Solapur: 997,281'], [34.08565, 74.80555, 'Srinagar: 975,857'], [30.73629, 76.7884, 'Chandigarh: 960,787'], [11.00555, 76.96612, 'Coimbatore: 959,823'], [26.26841, 73.00594, 'Jodhpur: 921,476'], [9.91769, 78.11898, 'Madurai: 909,908'], [26.1844, 91.7458, 'Guwahati: 899,094'], [26.22983, 78.17337, 'Gwalior: 882,458'], [16.50745, 80.6466, 'Vijayawada: 874,587'], [12.29791, 76.63925, 'Mysore: 868,313'], [23.34316, 85.3094, 'Ranchi: 846,454'], [15.34776, 75.13378, 'Hubli: 840,214'], [31.32556, 75.57917, 'Jalandhar: 785,178'], [8.4855, 76.94924, 'Thiruvananthapuram: 784,153'], [11.65376, 78.15538, 'Salem: 778,396'], [10.8155, 78.69651, 'Tiruchirappalli: 775,484'], [25.18254, 75.83907, 'Kota: 763,088'], [20.27241, 85.83385, 'Bhubaneshwar: 762,243'], [27.88145, 78.07464, 'Aligarh: 753,207'], [28.36678, 79.43167, 'Bareilly: 745,435'], [28.83893, 78.77684, 'Moradabad: 721,139'], [19.30023, 73.05881, 'Bhiwandi: 707,035'], [21.23333, 81.63333, 'Raipur: 679,995'], [26.76628, 83.36889, 'Gorakhpur: 674,246'], [21.20919, 81.4285, 'Bhilai: 625,138'], [22.80278, 86.18545, 'Jamshedpur: 616,338'], [19.23496, 72.85976, 'Borivli: 609,617'], [9.93988, 76.26022, 'Cochin: 604,696'], [20.93333, 77.75, 'Amravati: 603,837'], [16.85438, 74.56417, 'Sangli: 601,214'], [20.46497, 85.87927, 'Cuttack: 580,000'], [28.01762, 73.31495, 'Bikaner: 576,015'], [18.0, 79.58333, 'Warangal: 557,802'], [21.76287, 72.15331, 'Bhavnagar: 554,978'], [19.16023, 77.31497, 'Nanded: 550,564'], [22.22496, 84.86414, 'Raurkela: 536,450'], [16.29974, 80.45729, 'Guntur: 530,577'], [30.32443, 78.03392, 'Dehra Dun: 522,081'], [19.30157, 72.85107, 'Bhayandar: 520,301'], [23.51583, 87.30801, 'Durgapur: 518,872'], [26.4521, 74.63867, 'Ajmer: 517,911'], [19.21667, 73.15, 'Ulhasnagar: 516,584'], [16.69563, 74.23167, 'Kolhapur: 516,142'], [26.71004, 88.42851, 'Shiliguri: 515,574'], [20.76957, 72.96134, 'Bilimora: 510,879'], [28.65136, 77.19072, 'Karol Bagh: 505,241'], [23.68333, 86.98333, 'Asansol: 504,271']
+    ]);
+
+
+      var options = {
+        showTooltip: true,
+        showInfoWindow: true,
+        Zoom: 200,
+        icons: {
+          default: {
+            normal: 'https://icons.iconarchive.com/icons/icons-land/vista-map-markers/48/Map-Marker-Ball-Azure-icon.png',
+            selected: 'https://icons.iconarchive.com/icons/icons-land/vista-map-markers/48/Map-Marker-Ball-Right-Azure-icon.png'
+          }
+        }
+      };
+
+      var map = new google.visualization.Map(document.getElementById('abc'));
+
+      map.draw(data, options);
+    };
+  </script>
+</head>
+
+<body>
+  <div id="abc" style="position: relative; height: 100%; overflow: hidden;">
+
+  </div>
+</body>
+
+</html>
